@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h1>Library</h1>
+            <a>Log In</a>
+        </div>
+        <main class="main">
+
+            <button id="form-btn" class="button">Add Book</button>
+            <div id="form-popup" class="form_popup">
+                <div class="form_header">
+                    <h1 class=form_title>Add Book</h1>
+                    <button id="close-btn" class="close-btn">&times;</button>
+                </div>
+                <form class="form_body">
+                    <label for="title">Title:</label><br>
+                    <input type="text" name="title"><br>
+                    <label for="author">Author:</label><br>
+                    <input type="text" name="author"><br>
+                    <label for="pages">Number of Pages:</label><br>
+                    <input type="number" name="pages"><br>
+                    <label for="pages">Finished Reading</label>
+                    <input type="checkbox" name="isreading"><br>
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+            <div id=overlay></div>
+            <div id="library"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
