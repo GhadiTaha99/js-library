@@ -92,6 +92,7 @@ function renderLibrary(){
 function addBookToLibrary(book){
     console.log("called")
     myLibrary.push(book);
+    saveData();
     renderLibrary();
 }
 
