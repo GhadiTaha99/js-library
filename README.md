@@ -1,1 +1,1 @@
-A basic library built using HTML, CSS and vanilla Javascript to help you keep up with all the books you're currently reading.
+A basic library built using HTML, CSS and vanilla Javascript to help you keep up with all the books you're currently reading. For a live preview, [click here!](https://ghaditaha99.github.io/js-library/).
