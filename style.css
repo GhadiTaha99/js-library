@@ -6,37 +6,46 @@
 body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
+    background-color: #5CDB95;
 }
-.header{
+.main-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    color: #EDF5E1;
+    font-size:100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;;
     padding: 10px;
     margin-bottom: 10px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(61, 61, 138);
-    height: 100px;
-    box-shadow: 0px 3px rgba(0, 0, 0, 0.452);
+    text-align: center;
+    user-select: none;
 }
-.header h1{
-    color: #FFF;
-    font-weight: bold;
-}
-.header a{
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
 
-}
 .button {
     margin: 10px;
-    width: 120px;
+    width: 150px;
     height: 70px;
-    color: white;
-    background-color: rgb(61, 61, 138);
-    box-shadow: 0px 3px rgba(0, 0, 0, 0.452);
-    border-radius: 10px;
-    border: 1px solid rgb(12, 12, 12); 
+    color: #EDF5E1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #05386B;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    border: none; 
     cursor: pointer;
+}
+.button:hover{
+    background-color: #194c80;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .form_popup {
     position: fixed;
@@ -44,10 +53,11 @@ body{
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
+    border: 2px solid #05386B;
     border-radius: 10px;
     z-index: 10;
-    background-color: white;
+    color: #05386B;
+    background-color: #5CDB95;
     width: 500px;
     max-width: 80%;
 }
@@ -59,7 +69,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #05386B;
 }
 .form_title{
     font-weight: bold;
@@ -80,6 +90,16 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 15px;
+}
+.form_body input {
+    margin-bottom: 10px;
+    background-color: #EDF5E1;
+    border: 2px solid #05386B;
+    color: #05386B;
+}
+
+.form_body input:focus {
+    border-color: #5CDB95;
 }
 #overlay{
     position: fixed;
@@ -106,11 +126,23 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-    background-color: rgb(61, 61, 138);
+    width: 200px;
+    height: 300px;
+    border: 2px solid #379683;
+    border-radius: 12px;
+    background-color: #8EE4AF;
     padding: 10px;
-    margin: 20px;
-    color: white;
+    margin: 10px;
+    color: #05386B;
+}
+.book_element button{
+    transform: scale(0.8);
+    margin: 0px
+}
+.book_title{
+    font-size: 21px;
+}
+.author{
+    font-style: italic;
+    font-size: 18px;
 }

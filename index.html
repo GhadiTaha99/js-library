@@ -10,30 +10,27 @@
 </head>
 <body>
     <div class="main-container">
-        <header class="header">
-            <h1>Library</h1>
-            <a>Log In</a>
-        </div>
+        <h1 id="title">JS-Library</h1>
+        
         <main class="main">
-
-            <button id="form-btn" class="button">Add Book</button>
+            <div><button id="form-btn" class="button">+ Add Book</button></div>
             <div id="form-popup" class="form_popup">
                 <div class="form_header">
                     <h1 class=form_title>Add Book</h1>
                     <button id="close-btn" class="close-btn">&times;</button>
                 </div>
-                <form class="form_body">
+                <div class="form_body">
                     <label for="title">Title:</label><br>
-                    <input type="text" name="title"><br>
+                    <input type="text" name="title" id="title-input"><br>
                     <label for="author">Author:</label><br>
-                    <input type="text" name="author"><br>
+                    <input type="text" name="author" id="author-input"><br>
                     <label for="pages">Number of Pages:</label><br>
-                    <input type="number" name="pages"><br>
+                    <input type="number" name="pages" id="pages-input"><br>
                     <label for="pages">Finished Reading</label>
-                    <input type="checkbox" name="isreading"><br>
-                    <input type="submit" value="Submit">
+                    <input type="checkbox" name="isreading" id="isread-input"><br>
+                    <button id="submit-btn" class="button">Add Book</button>
 
-                </form>
+                </div>
 
             </div>
             <div id=overlay></div>
