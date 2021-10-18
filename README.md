@@ -1,0 +1,1 @@
+A basic library built using HTML, CSS and vanilla Javascript to help you keep up with all the books you're currently reading.
